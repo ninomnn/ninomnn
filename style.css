@@ -1,0 +1,169 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: #000;
+}
+
+header {
+  padding-top: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+header p {
+  left: 25rem;
+  color: #fff;
+}
+
+.name {
+  height: 30rem;
+  padding-top: 1rem;
+  background-position: center;
+  background-repeat: none;
+}
+
+.name h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 10rem;
+  padding: 2rem;
+  background-color: #000;
+  text-align: center;
+}
+
+.name a {
+  color: #4285F4;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.projectstitle,
+.testimonial,
+.portfolio,
+.meetup {
+  margin: 4em auto;
+}
+
+.projectstitle {
+  padding: 0 1rem;
+}
+
+.projectstitle p {
+  color: White;
+}
+
+.testimonial {
+  background-color: grey;
+  height: 20rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  color: #fff;
+}
+
+.testimonial h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.projectstitle h2 {
+  color: #fff;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: grid;
+  width: 30%;
+  margin: 1.5%;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.project button {
+  width: 150px;
+  height: 50px;
+  margin: 1.5% auto;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+  color: #fff;
+  background-color: #4285F4;
+  padding: 0px;
+  border-width: 0px;
+  border-radius: 25px;
+}
+
+.meetup {
+  margin-bottom: 2rem;
+}
+
+.meetup img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.meetup h1 {
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1048px) {
+
+  .project {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .name h1 {
+    margin-top: 2rem;
+  }
+
+  .name {
+    max-height: 200px;
+  }
+
+  .project {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .testimonial h1 {
+    font-size: 2rem;
+  }
+
+  .pproject {
+    width: 100%;
+  }
+}
