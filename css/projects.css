@@ -1,0 +1,74 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../images/aboutbg.jpg');
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.project {
+  display: grid;
+  width: 30%;
+  margin: 1.5%;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: #3d3d3d 5px 5px 5px 5px;
+}
+
+.project button {
+  width: 150px;
+  height: 50px;
+  margin: 5% auto 0 auto;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+  color: #fff;
+  background-color: #000;
+  padding: 0px;
+  border-width: 0px;
+  border-radius: 25px;
+}
+
+.project button:hover{
+  background-color: transparent;
+  color: #000;
+  transition: 0.5s ease;
+  border: 1px solid #000;
+}
+
+/*tablet*/
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .project {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project button {
+    width: 200px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .project {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project button {
+    width: 200px;
+    height: 80px;
+  }
+}
+
+/*mobile*/
