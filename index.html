@@ -3,68 +3,194 @@
 
   <head>
     <title>ninomnn</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/skill.css">
+    <link rel="stylesheet" type="text/css" href="css/intro.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="carousel.js" async></script>
+    <script type="text/javascript" src="urls.js" async></script>
+    <script type="text/javascript" src="header.js" async></script>
   </head>
 
   <body>
-    <header>
-      <ul>
-        <a href=""><li>About Me</li></a>
-        <a href=""><li>Projects</li></a>
-        <a href=""><li>Skills</li></a>
-        <a href=""><li>Contact</li></a>
+    <header id="myHeader">
+      <i id="bars" class="fa fa-bars"></i>
+      <ul class="nav-menu">
+        <a href="index.html" class="nav-link"><li>A propos</li></a>
+        <a href="projects/projects.html" class="nav-link"><li>Réalisations</li></a>
+        <a href="#skills" class="nav-link"><li>Compétences</li></a>
+        <a href="#contact" class="nav-link"><li>Contact</li></a>
+        <a href="CV/CV_MENNOUNI_Nino_Développeur_Web.pdf" class="nav-link"><li>CV</li></a>
       </ul>
-    </header>>
+      <div class="name">
+        <h1>nino<a class="dash">_</a>mnn</h1>
+      </div>
+      <div class="nothing"></div>
+    </header>
 
-    <div class="name">
-      <h1>nino<a>_</a>mnn</h1>
-    </div>
+    <nav id="mobileMenu" class="mobile-menu">
+      <a href="index.html" class="nav-link"><li>A propos</li></a>
+      <a href="projects/projects.html" class="nav-link"><li>Réalisations</li></a>
+      <a href="#skills" class="nav-link"><li>Compétences</li></a>
+      <a href="#contact" class="nav-link"><li>Contact</li></a>
+      <a href="CV_MENNOUNI_Nino_Développeur_Web.pdf" class="nav-link"><li>CV</li></a>
+    </nav>
+    
+    <div class="snap-scroll-wrapper">
+    <section class="snap">
+      <div class="intro">
+        <div class="intro-block">
+          <h1>Nino<a class="dash">_</a>Mennouni</h1>
+          <hr/>
+          <p id="post-title">Développeur Web</p>
+      </div>
+      </div>
+    </section>
 
-    <div class="projectstitle">
-      <h2>My Projects:</h2>
-    </div>
+    <section class="snap">
+      <div class="about">
+        <img src="images/NINO.jpg"/>
+        <div class="presentation">
+          <h1>Présentation</h1>
+          <p>
+            Anciennement étudiant en Langues Étrangères Appliquées je me suis reconverti dans le développement web.
+            <br/>
+            <br/>
+            Ayant acquis certaines compétences en autodidacte et suivi certains cours sur des plateformes comme CodeCademy en parallèle de mon ancien travail, j'ai pu acquérir des compétences en utilisant les langages HTML, CSS, JavaScript (React, Node, Express) et Git.
+            <br/>
+            <br/>
+            Je suis actuellement à la recherche d'un poste en alternance dans le domaine du développement web sur Paris pour suivre une formation avec <strong>OpenClassrooms</strong>, afin de pouvoir apporter ma valeur et renforcer mes compétences dans la programmation web au profit d'une entreprise qui correspond à mes valeurs.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <div class="portfolio">
-      <div class="project">
-        <img src="images/sparta-club.png" />
-        <button id="sparta-club">Sparta Club</button>
+    <section class="snap">
+      <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <div class="cards">
+          <label class="card" for="item-1" id="song-1">
+            <div class="slide">
+              <img src="images/projects.jpg" />
+            </div>
+          </label>
+          <label class="card" for="item-2" id="song-2">
+            <div class="slide">
+              <img src="images/github.jpg" />
+            </div>
+          </label>
+          <label class="card" for="item-3" id="song-3">
+            <div class="slide">
+              <img src="images/cv.jpg" />
+            </div>
+          </label>
+        </div>
+        <div class="player">
+          <div class="upper-part">
+            <div class="info-area" id="test">
+              <label class="song-info" id="song-info-1">
+                <button id="projects" class ="carousel-button">Voir mes réalisations</button>
+              </label>
+              <label id="song-info-2">
+                <button id="github" class ="carousel-button">Voir mon GitHub</button>
+              </label>
+              <label id="song-info-3">
+                <button id="cv" class ="carousel-button">Voir mon CV</button>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="project">
-        <img src="images/itinerspace.png" />
-        <button id="itinerspace">Itinerspace</button>
-      </div>
-      <div class="project">
-        <img src="images/fotomatic.png" />
-        <button id="fotomatic">Fotomatic</button>
-      </div>
-      <div class="project">
-        <img src="images/tea-cozy.png" />
-        <button id="tea-cozy">Tea Cozy</button>
-      </div>
-      <div class="project">
-        <img src="images/excursion.png" />
-        <button id="excursion">Excursion</button>
-      </div>
-      <div class="project">
-        <img src="images/mixed-message.png" />
-        <button id="mixed-message">Mixed Message</button>
-      </div>
-      <div class="project">
-        <img src="images/dasmoto.png" />
-        <button id="dasmoto">Dasmoto's Arts & Crafts</button>
-      </div>
-    </div>
+    </section>
 
-    <div class="bar">
-      <ul>
-        <a href=""><li>About Me</li></a>
-        <a href=""><li>Projects</li></a>
-        <a href=""><li>Skills</li></a>
-        <a href=""><li>Contact</li></a>
-      </ul>
-    </div>
+    <section class="snap">
+      <div class="skill" id="skills">
+          <div class="skills-title">
+            <h1>Mes Compétences</h1>
+          </div>
+          <div class="skills-blocks">
+            <div class="skills-list">
+              <div class="listContainer">
+              <ul class="rounded-list">
+                <li>Maitrise des langages <strong>Front-End</strong> (HTML,CSS,JavaScript)</li>
+                <li>Versionning et partage de projet avec <strong>Git</strong> et <strong>GitHub</strong></li>
+                <li>Création de <strong>Media Queries</strong> afin de gérer la responsivité des sites Web</li>
+                <li>Créer une <strong>API</strong> pour joindre l'interface utilisateur et le serveur</li>
+                <li>Mettre en place une <strong>Application Web</strong> avec <strong>React.js</strong></li>
+                <li>Utilisation de <strong>Photoshop</strong> afin d'intégrer des maquettes</li>
+                <li>Gestion d'un commerce en ligne avec <strong>Shopify</strong></li>
+              </ul>
+              </div>
+              <div class="listContainer">
+              <h2 class="skills-list-title text-center">Logiciels & Environnement</h2>
+              <ul class="rounded-list">
+                <li>Visual Studio Code</li>
+                <li>Git & GitHub</li>
+                <li>Postman API</li>
+                <li>Postgre SQL</li>
+                <li>Linux</li>
+                <li>Windows</li>
+                <li>Shopify</li>
+                <li>Microsoft office</li>
+                <li>Netlify</li>
+                <li>Photoshop</li>
+                <li>Canva</li>
+              </ul>
+            </div>
+            </div>
+            <div class="skills-charts">
+              <div class="skills-chart">
+                <h2 class="skills-list-title text-center">Langages Web & Librairies</h2>
+                <p class="font-weight-bold">HTML/CSS</p>
+                <div class="bar">
+                  <div class="bar-inner bar-75" data-percent="75%"></div>
+                </div>
+                <p class="font-weight-bold">Javascript</p>
+                <div class="bar">
+                  <div class="bar-inner bar-60" data-percent="60%"></div>
+                </div>
+                  <p class="font-weight-bold">React</p>
+                <div class="bar">
+                  <div class="bar-inner bar-50" data-percent="50%"></div>
+                </div>
+                  <p class="font-weight-bold">Node/Express</p>
+                  <div class="bar">
+                    <div class="bar-inner bar-30" data-percent="30%"></div>
+                  </div>
+                  <p class="font-weight-bold">SQL</p>
+                  <div class="bar">
+                    <div class="bar-inner bar-20" data-percent="20%"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>
+    </section>
+
+    <footer class="snap" id="contact">
+      <div class="contactSec">
+        <h1>Contactez-moi</h1>
+        <div class="contactWays">
+          <div class="email">
+            <i class="fa fa-envelope" style="font-size:24px;color:#fff"></i><a href="mennouni.nino.pro@gmail.com">mennouni.nino.pro@gmail.com</a>
+          </div>
+          <div class="contactIcons">
+            <a href="https://www.linkedin.com/in/ninomennouni/" id="linkedinico"><i class="fa fa-linkedin-square" style="font-size:48px;color: #fff;"></i></a>
+            <a href="https://github.com/ninomnn" id="githubico"><i class="fa fa-github" style="font-size:48px;color:#fff"></i></a>
+          </div>
+        </div>
+        <div class="name2">
+          <h1>nino<a class="dash">_</a>mnn</h1>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   </body>
 
