@@ -47,28 +47,16 @@ body {
   border: 1px solid #000;
 }
 
-/*tablet*/
-@media only screen and (width: 1024px) and (height: 1366px) {
+@media only screen and (orientation: portrait) {
   .project {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
   .project button {
-    width: 200px;
-    height: 80px;
+    width: 50vw;
+    height: 8vh;
+    font-size: 200%;
+    border-radius: 4vh;
   }
 }
-@media only screen and (max-width: 950px) {
-  .project {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .project button {
-    width: 200px;
-    height: 80px;
-  }
-}
-
-/*mobile*/

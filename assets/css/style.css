@@ -1,6 +1,6 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: auto;
   margin: 0;
   background-color: #fff;
 }
@@ -10,7 +10,7 @@ header {
   color: #fff;
   display: flex;
   width: 100%;
-  height: 5%;
+  height: 5vh;
   align-items: center;
   justify-content: space-between;
 }
@@ -18,7 +18,7 @@ header {
 .sticky {
   position: fixed;
   top: 0;
-  height: 5%;
+  height: 5vh;
 }
 
 button {
@@ -61,7 +61,7 @@ footer {
   background: linear-gradient(#000,#3d3d3d);
   color: #fff;
   position: relative;
-  max-height: 50vh;
+  max-height: 60vh;
   width: 100%;
   bottom: 0;
 }
@@ -70,16 +70,17 @@ footer {
   width: 100%;
   height: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   text-align: center;
 }
 
 .contactSec h1 {
-  height: 20%;
+  height: 5vh;
+  font-size: 5vh;
 }
 
 .contactWays {
-  height: 30%;
+  height: 15vh;
   justify-content: center;
   align-items: center;
   display: block;
@@ -93,11 +94,15 @@ footer {
 
 .email a {
   color: #fff;
-  margin: 10px;
+  margin: 2vw;
   text-decoration: none;
 }
 
-.contactIcons{
+.email i {
+  font-size: auto;
+}
+
+.contactIcons {
   margin: 10px;
 }
 
@@ -109,8 +114,13 @@ footer {
   margin: 0 10px;
 }
 
+.contactIcons i {
+  font-size: 8vh;
+}
+
 .name2 {
-  height: auto;
+  height: 5vh;
+  justify-content: center;
 }
 
 #bars {
@@ -130,9 +140,9 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 40px 0;
+  margin: 5vh 0;
   pointer-events: none;
-  font-size: 30px;
+  font-size: 4vh;
   padding: 20% 0;
 }
 
@@ -140,17 +150,20 @@ footer {
   display: none;
 }
 
-/*tablet*/
+@media only screen and (orientation: portrait) {
 
-@media only screen and (width: 1024px) and (height: 1366px) {
   .nav-menu {
     display: none;
   }
   
+  header {
+    height: 5vh;
+  }
+
   #bars {
     display: block;
-    font-size: 25px;
-    margin-left: 10px;
+    font-size: 2.5vh;
+    margin-left: 2vw;
     color: #fff;
     cursor: pointer;
     transition: color 0.6s ease;
@@ -170,39 +183,8 @@ footer {
     width: 80%;
   }
 
-  .nothing {
-    display: block;
-    width: 10%;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-
-  .nav-menu {
-    display: none;
-  }
-  
-  #bars {
-    display: block;
-    font-size: 25px;
-    margin-left: 10px;
-    color: #fff;
-    cursor: pointer;
-    transition: color 0.6s ease;
-    width: 10%;
-  }
-
-  .active {
-    left: 0;
-    opacity: 1;
-    pointer-events: auto;
-    transition: left 0.6s ease-in-out;
-  }
-
-  .name {
-    text-align: center;
-    margin-right: none;
-    width: 80%;
+  .name h1 {
+    font-size: 2vh;
   }
 
   .nothing {
@@ -210,10 +192,15 @@ footer {
     width: 10%;
   }
 
-}
-/*mobile*/
-@media only screen and (max-height: 500px) {
   footer {
-    max-height: 80vh;
+    max-height: 50vh;
+  }
+
+  .email {
+    height: 50%;
+    font-size: 2.5vh;
+  }
+  .contactIcons {
+    height: 50%;
   }
 }

@@ -11,7 +11,7 @@
 
 .intro-block {
     display: grid;
-    padding: 15px 30px;
+    padding: 1.5vh 3vw;
     border-radius: 20px;
     background-color: #fff;
     align-items: center;
@@ -25,14 +25,13 @@
     width: 90%;
 }
 
-/*tablet*/
-
-/*mobile*/
-@media only screen and (max-width: 640px) {
+@media only screen and (orientation: portrait) {
 
     .intro-block {
         min-width: 60%;
         min-height: 25%;
+        font-size: 4vw;
+        border-radius: 4vw;
     }
 
 }

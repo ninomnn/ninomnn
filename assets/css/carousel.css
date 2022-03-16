@@ -8,8 +8,8 @@ input[type=radio] {
   
 .card {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 50vh;
+  height: 50vh;
   left: 0;
   right: 0;
   margin: auto;
@@ -42,8 +42,8 @@ input[type=radio] {
 }
   
 .slide img {
-  width: 500px;
-  height: 500px;
+  width: 50vh;
+  height: 50vh;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -132,116 +132,34 @@ input[type=radio] {
   transform: translateY(-200%);
 }
 
-/*desktop*/
-@media only screen and (max-height: 770px) {
-  .card {
-    width: 450px;
-    height: 450px;
-  }
-
-  .slide img {
-    width: 450px;
-    height: 450px;
-  }
-}
-
-@media only screen and (min-height: 1080px) and (min-width:1920) {
-  .card {
-    width: 600px;
-    height: 600px;
-  }
-
-  .slide img {
-    width: 600px;
-    height: 600px;
-  }
-}
-/*tablet*/
-@media only screen and (max-height: 640px) {
-  .card {
-    width: 380px;
-    height: 380px;
-  }
-
-  .slide img {
-    width: 380px;
-    height: 380px;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .card {
-    width: 450px;
-    height: 450px;
-  }
-
-  .slide img {
-    width: 450px;
-    height: 450px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .card {
-    width: 350px;
-    height: 350px;
-  }
-
-  .slide img {
-    width: 350px;
-    height: 350px;
-  }
-}
-/*mobile*/
-@media only screen and (max-height: 500px) {
-  .card {
-    width: 250px;
-    height: 250px;
-  }
-
-  .slide img {
-    width: 250px;
-    height: 250px;
-  }
+@media only screen and (orientation: landscape) and (max-height: 50vw) {
   .cards {
     margin-bottom: 2%;
   }
   .player {
-    height: 50px
+    height: 15vh;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (orientation: portrait) {
   .card {
-    width: 200px;
-    height: 200px;
+    width: 60vw;
+    height: 60vw;
   }
 
   .slide img {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .card {
-    width: 250px;
-    height: 250px;
-  }
-
-  .slide img {
-    width: 250px;
-    height: 250px;
+    width: 60vw;
+    height: 60vw;
   }
   .cards {
-    padding-top: 20%;
+    padding-top: 10vh;
+    margin-bottom: 2vh;
   }
-}
-@media only screen and (max-width: 400px) {
-  .card {
-    width: 220px;
-    height: 220px;
+  .player {
+    height: 15vh;
+    width: 60vw;
+    border-radius: 4vw;
   }
-
-  .slide img {
-    width: 220px;
-    height: 220px;
+  .carousel-button {
+    font-size: 4em;
   }
 }

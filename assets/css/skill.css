@@ -11,22 +11,24 @@
 .skills-title h1 {
     color: #fff;
     text-align: center;
+    padding-bottom: 1.5vh;
+    height: 5vh;
 }
 .skills-blocks {
     align-items: center;
     justify-content: center;
     display: flex;
     width: 100%;
-    height: 80%;
+    height: 75vh;
 }
 .skills-list {
-    padding: 20px;
+    padding: 0 2vh;
     color: #3d3d3d;
     background-color: #fff;
     border-radius: 20px;
     width: 50%;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 1vh;
 }
 .rounded-list {
     padding: 0;
@@ -34,20 +36,19 @@
 .rounded-list li {
     position: relative;
     background: linear-gradient(#3d3d3d, #000);
-    padding: 8px;
-    margin: 10px 0;
+    padding: 1vh;
+    margin: 1vh 0;
     border-radius: 20px;
     list-style-type: none;
     transition: background-color .3s ease;
     box-shadow: 0px 2px 6px 0px #3d3d3d;
+    font-size: 1.8vh;
 }
 .rounded-list li:hover {
     background: linear-gradient(#4285F4, #3c77d6);
-    color: #fff;
 }
 .skills-list-title {
-    padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 4vh;
     font-weight: bold;
 }
 .skills-charts {
@@ -58,21 +59,22 @@
     width: 50%;
 }
 .skills-chart {
-    padding: 20px;
+    padding: 0 3vh;
     border-radius: 20px;
     background-color: #fff;
     color: #3d3d3d;
     width: 100%;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 1vh;
 }
 .skills-chart p{
-    margin-bottom: 3px;
+    margin-bottom: 0.5vh;
+    font-size: 3vh;
 }
-.bar{
-      height: 25px;
-      margin: 0 auto 10px auto;
-      background-color: #ddd;
+.bar {
+    height: 5vh;
+    margin: 0 auto 10px auto;
+    background-color: #ddd;
     box-shadow: 0px 2px 6px 0px #3d3d3d;
     border-radius: 20px;
 }
@@ -86,11 +88,12 @@
 }
 .bar-inner::after{
     position: absolute;
-    right: 5px;
+    right: 1vw;
     content: attr(data-percent);
-    line-height: 25px;
+    line-height: 5vh;
     color: #fff;
     font-weight: 700;
+    font-size: 3vh;
 }
 .bar-75 {
     width: 75%;
@@ -114,254 +117,80 @@
     width: 20%;
 }
 
-/*desktop*/
-@media only screen and (max-height: 835px) {
-    .skills-list {
-        padding: 10px;
-        font-size: 13px;
+@media only screen and (orientation: portrait) {
+    .skills-title h1 {
+        font-size: 300%;
     }
-}
-  
-/*tablet*/
-@media only screen and (max-height: 640px) {
+    .skills-blocks {
+        flex-direction: column;
+        height: 80vh;
+    }
     .skills-list {
-        padding: 0 5px;
-        font-size: 13px;
+        width: 95vw;
+        height: 45vh;
+        display: flex;
+        padding: 0;
+        margin: 1vh 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .listContainer {
+        padding: 0 2%;
+        height: 40vh;
+        max-width: 60%;
     }
     .rounded-list li {
-        margin: 5px 0;
+        padding: 1vw;
+        margin: 1vw 0;
+        font-size: 2.25vw;
+        border-radius: 2vh;
     }
-}
-@media only screen and (width: 1024px) and (height: 1366px) {
-    .skills-title {
-        height: 10%;
-    }
-    .skills-blocks {
-        flex-direction: column;
-    }
-    .skills-list {
-        width: 95vw;
-        height: 55%;
-        display: flex;
-        padding: 0;
-        margin: 0 10% 5% 10%;
-        font-size: 15px;
-        align-items: center;
-        justify-content: space-around;
+    .skills-list-title {
+        font-size: 4vw;
     }
     .skills-charts {
         width: 95vw;
-        height: 50%;
-    }
-    .listContainer {
-        width: 50%;
-        padding: 0 5%;
-    }
-}
-@media only screen and (max-width: 950px) and (min-height: 500px) {
-    .skills-title {
-        height: 10%;
-    }
-    .skills-blocks {
-        flex-direction: column;
-    }
-    .skills-list {
-        width: 95vw;
-        height: 55%;
-        display: flex;
-        padding: 0;
-        margin: 0 10% 5% 10%;
-        font-size: 13px;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .skills-charts {
-        width: 95vw;
-        height: 50%;
-    }
-    .listContainer {
-        width: 45%;
-        padding: 0 5%;
-    }
-}
-@media only screen and (max-width: 770px) {
-    .skills-list {
-        font-size: 11px;
-    }
-    .bar {
-        height: 20px;
-    }
-}
-@media only screen and (max-width: 770px) and (max-height: 970px) {
-    .skills-list {
-        font-size: 9px;
-    }
-    .bar {
-        height: 19px;
-    }
-}
-/*mobile*/
-@media only screen and (max-height: 500px) {
-    .skills-title {
-        font-size: 12px;
-    }
-    .skills-list {
-        font-size: 8px;
-    }
-    .bar {
-        height: 5px;
-    }
-    .skills-list-title {
-        padding-bottom: 5px;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    .bar-inner::after {
-        color: #000;
-    }
-    .skills-blocks {
-        height: 75%;
-    }
-}
-
-@media only screen and (max-height: 500px) and (max-width: 900px) {
-    .skills-list {
-        font-size: 7px;
-    }
-}
-
-@media only screen and (max-height: 500px) and (max-width: 815px) {
-    .skills-list {
-        font-size: 6px;
-    }
-    .bar {
-        height: 4px;
-    }
-    .skills-blocks {
-        height: 70%;
-    }
-    .skills-list-title {
-        padding-bottom: 0px;
+        height: 50vh;
+        margin: 1vh 0;
     }
     .skills-chart {
-        padding-top: 0px;
+        height: 42.5vh;
+        padding: 0 3vw;
+        margin: 0;
     }
-    .font-weight-bold {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (max-height: 400px) and (max-width: 720px) {
-    .skills-list {
-        font-size: 5px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .skills-title {
-        height: 8%;
-        margin-bottom: 5px;
-    }
-    .skills-list-title {
-        font-size: 20px;
-        padding: 0;
-    }
-    .rounded-list li {
-        margin: 4px 0;
-        padding: 5px;
-        font-size: 12px;
-    }
-    .skills-list {
-        font-size: 10px;
-        display: flex;
-        flex-direction: column;
-        height: 70%;
+    .skills-chart p {
+        font-size: 2.5vw;
+        margin-bottom: 0.5vw;
     }
     .bar {
-        height: 5px;
+        height: 5vw;
+        margin-bottom: 0;
+        border-radius: 2vh;
     }
     .bar-inner::after {
-        color: #000;
-    }
-    .skills-blocks {
-        height: 80%;
-    }
-    .listContainer {
-        width: 90%;
-    }
-    .skills-charts {
-        width: 100vw;
-        height: 50%;
+        line-height: 5vw;
+        font-size: 3vw;
     }
 }
-@media only screen and (max-width: 500px) and (max-height: 900px) {
-    .skills-title {
-        height: 6%;
-        margin-bottom: 5px;
+
+@media only screen and (orientation: portrait) and (min-width: 57vh) {
+    .skills-title h1 {
+        font-size: 250%;
+    }
+    .rounded-list li {
+        font-size: 1.8vw;
     }
     .skills-list-title {
-        font-size: 13px;
+        font-size: 3vw;
     }
-    .skills-list {
-        height: 60%;
+    .skills-chart p {
+        font-size: 2vw;
     }
-    .rounded-list li {
-        margin: 3px 0;
-        font-size: 11px;
-    }
-}
-@media only screen and (max-width: 500px) and (max-height: 820px) {
-    .skills-title {
-        height: 3%;
-        margin-bottom: 10%;
-    }
-    .skills-list {
-        height: 60%;
-    }
-    .listContainer {
-        width: 100%;
-    }
-    .rounded-list li {
-        font-size: 11px;
-        padding: 5px;
-    }
-}
-@media only screen and (max-width: 500px) and (max-height: 790px) {
-    .rounded-list li {
-        font-size: 10px;
-        padding: 4px;
-    }
-}
-@media only screen and (max-width: 380px) and (max-height: 770px) {
-    .skills-list {
-        margin-bottom: 5px;
-    }
-    .skills-charts {
-        height: 40%;
-    }
-    .skills-chart {
-        padding-top: 2px;
-    }
-    .font-weight-bold {
-        font-size: 12px;
-    }
-}
-@media only screen and (max-width: 380px) and (max-height: 670px) {
-    .font-weight-bold {
-        font-size: 10px;
+    .bar {
+        height: 3vw;
     }
     .bar-inner::after {
-        font-size: 12px;
-    }
-    .rounded-list li {
-        font-size: 10px;
-        padding: 3px;
-    }
-    .skills-list {
-        height: 65%;
-    }
-    .skills-title {
-        margin-bottom: 10%;
-        height: 2%;
+        line-height: 3vw;
+        font-size: 2.5vw;
     }
 }
